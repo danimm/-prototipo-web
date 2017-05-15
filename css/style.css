@@ -5,15 +5,20 @@
 */
 body{
     margin: 0 auto;
-    
+    /* Portada */
 }
 .contenedor{
-    max-width: 800px;
+    max-width: 900px;
     position: relative;
     margin: auto;
 }
+.contenedor.cont-portada{
+    max-width: 700px;
+    margin-left: 20px;
+}
 .header{
     position: relative;
+    margin-right: 20px;
 }
 .logo{
     display: inline-block;
@@ -22,11 +27,11 @@ body{
     display: inline-block;
     position: absolute;
     right: 0;
-    font-size: 24px;
+    font-size: 26px;
 }
 .navbar li{
     display: inline-block;
-    padding-left: 10px;
+    padding-right: 18px;
 }
 .navbar a{
     text-decoration: none;
@@ -44,10 +49,10 @@ body{
 }
 .background{
     height: 590px;
-    width: 99%;
-    background: url(../images/fondo1.jpg) no-repeat center top;
+    width: 100%;
+    background: url(../images/fondo2.jpg) no-repeat 50% 50%;
     background-size: cover;
-    opacity: .25;
+    opacity: .72;
     z-index: 0;
     position: absolute;
     left: 0;
@@ -62,4 +67,33 @@ body{
 }
 .subtitulo{
     font-size: 24px;
+    color:white;
+}
+.button{
+    text-decoration: none;
+    height: 40px;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    background: linear-gradient(to left, #fe344e, #ff7250);
+    padding: 7px 12px;
+    border: none;
+}
+.logo{
+    margin: 0;
+}
+
+/* Descripcion */
+
+.descripcion{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.descripcion h2{
+    font-size: 35px;
+}
+.descripcion h3{
+    font-size: 20px;
+    font-weight: 200;
 }
