@@ -94,7 +94,7 @@ body{
 /* Descripcion */
 
 .descripcion{
-    max-width: 700px;
+    max-width: 850px;
     margin: 0 auto;
 }
 .descripcion h2{
@@ -103,6 +103,28 @@ body{
 .descripcion h3{
     font-size: 20px;
     font-weight: 200;
+}
+.art-1 {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.art-1 blockquote{
+    font-size: 18px;
+    margin: 5px;
+    background-image: url(../images/openquote3.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    text-indent: 68px;
+    padding-top: 40px;
+}
+.art-1 span{
+    display: block;
+    background-image: url(../images/closequote3.gif);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-bottom: 40px;
+    
 }
 
 /* Footer */
@@ -141,7 +163,7 @@ body{
 .contacto a{
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 15px;
     text-align: left;
     display: block
@@ -151,7 +173,7 @@ body{
     justify-content:center;
 }
 .footer h3{
-    font-size: 45px;
+    font-size: 40px;
     text-align: center;
     padding-top: 20px;
 }
