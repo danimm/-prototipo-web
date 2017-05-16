@@ -5,20 +5,25 @@
 */
 body{
     margin: 0 auto;
+    font-family: 'Lora', serif;
     /* Portada */
 }
 .contenedor{
     max-width: 900px;
     position: relative;
-    margin: auto;
 }
 .contenedor.cont-portada{
     max-width: 700px;
     margin-left: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background: rgba(39,59,71,.3);
+    border-radius: 20px;
 }
 .header{
     position: relative;
     margin-right: 20px;
+    margin: 0 auto;
 }
 .logo{
     display: inline-block;
@@ -41,19 +46,22 @@ body{
     height: 550px;
     padding: 20px;
     position: relative;
-    background-color:darkslategray;
+/*    background-color:black;*/
 }
 .cabecera{
+    
+/*
     z-index: 80;
     opacity: 1;
+*/
 }
 .background{
     height: 590px;
     width: 100%;
     background: url(../images/fondo2.jpg) no-repeat 50% 50%;
     background-size: cover;
-    opacity: .72;
-    z-index: 0;
+    opacity: .9;
+/*    z-index: 0;*/
     position: absolute;
     left: 0;
     top: 0;
@@ -61,7 +69,6 @@ body{
 }
 .titulo{
     font-size: 60px;
-    margin-top: 60px;
     margin-bottom: 10px;
     color: white;
 }
@@ -96,4 +103,73 @@ body{
 .descripcion h3{
     font-size: 20px;
     font-weight: 200;
+}
+
+/* Footer */
+
+.footer{
+    background: rgba(124, 158, 188,.7);
+    text-align: center;
+    margin: 0 auto;
+}
+.contacto{
+    padding-left: 20px;
+    height: 350px;
+    width: 600px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.col-2 a{
+    display: inline-block;
+}
+.col-2 h4{
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+.col-2 h4:first-child{
+    font-size: 28px;
+    border-bottom: none;
+    margin-bottom: 5px;
+}
+.contacto a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-top: 15px;
+    text-align: left;
+    display: block
+}
+.contenedor.cont{
+    display: flex;
+    justify-content:center;
+}
+.footer h3{
+    font-size: 45px;
+    text-align: center;
+    padding-top: 20px;
+}
+.contacto img{
+    border-radius: 50%;
+}
+.contenedor-footer{
+    display: flex;
+    justify-content:space-around;
+}
+.contacto-huetor{
+    display:block;
+}
+.contacto-huetor img{
+    margin-bottom: 30px;
+}
+.contacto-huetor span{
+    display: block;
+    font-size: 20px;
+    text-align: left;
 }
