@@ -71,10 +71,12 @@ body{
     font-size: 60px;
     margin-bottom: 10px;
     color: white;
+    padding-top: 15px;
 }
 .subtitulo{
     font-size: 24px;
     color:white;
+    padding: 15px;
 }
 .button{
     text-decoration: none;
@@ -104,12 +106,21 @@ body{
     font-size: 20px;
     font-weight: 200;
 }
-.art-1 {
+.cont-descrip {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 2px solid black;
     border-radius: 20px;
+    margin-bottom: 28px;
 }
-.art-1 blockquote{
+.art-2{
+    flex-direction: row;
+}
+.art-3{
+    flex-direction: row-reverse;
+}
+article blockquote{
     font-size: 18px;
     margin: 5px;
     background-image: url(../images/openquote3.gif);
@@ -118,7 +129,7 @@ body{
     text-indent: 68px;
     padding-top: 40px;
 }
-.art-1 span{
+article span{
     display: block;
     background-image: url(../images/closequote3.gif);
     background-repeat: no-repeat;
@@ -195,3 +206,30 @@ body{
     font-size: 20px;
     text-align: left;
 }
+
+/* Precios */
+
+.tabla{
+    margin: 50px 20px;
+}
+table{
+    width: 100%;
+}
+table,td,th{
+    border: 1px solid #1F313C;
+    border-collapse: collapse;
+}
+
+th{
+    background: #1F313C;
+    color: aliceblue;
+}
+th{
+    padding: 10px;
+    text-align: left;
+}
+td{
+    padding: 20px;
+}
+
+
