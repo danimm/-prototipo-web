@@ -13,14 +13,15 @@ body{
     position: relative;
 }
 .contenedor.cont-portada{
-    max-width: 700px;
+    max-width: 80vw;
     margin-left: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     background: rgba(39,59,71,.3);
     border-radius: 20px;
+    margin: 0 auto;
 }
 .header{
+    max-width: 65vw;
     position: relative;
     margin-right: 20px;
     margin: 0 auto;
@@ -43,8 +44,8 @@ body{
     color: white;
 }
 .portada{
-    height: 550px;
-    padding: 20px;
+    height: 100vh;
+    padding-top: 20px;
     position: relative;
 /*    background-color:black;*/
 }
@@ -56,7 +57,7 @@ body{
 */
 }
 .background{
-    height: 590px;
+    height: 100vh;
     width: 100%;
     background: url(../images/fondo2.jpg) no-repeat 50% 50%;
     background-size: cover;
@@ -65,13 +66,17 @@ body{
     position: absolute;
     left: 0;
     top: 0;
-    
+}
+.centrar-titulo{
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .titulo{
     font-size: 60px;
     margin-bottom: 10px;
     color: white;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 .subtitulo{
     font-size: 24px;
@@ -94,10 +99,12 @@ body{
 }
 
 /* Descripcion */
-
+.introduccion{
+    text-align: center;
+    font-size: 40px;
+}
 .descripcion{
-    max-width: 850px;
-    margin: 0 auto;
+    max-width: 100vw;
 }
 .descripcion h2{
     font-size: 35px;
@@ -106,13 +113,27 @@ body{
     font-size: 20px;
     font-weight: 200;
 }
-.cont-descrip {
+.detalles {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
     border-radius: 20px;
-    margin-bottom: 28px;
+    height: 500px;
+}
+.imagen1{
+    background: url(../images/foto1.JPG) no-repeat center;
+    background-size: cover; 
+}
+.right{
+    
+    flex:1;
+    order: 2;
+}
+.left{
+    flex:1;
+    order: 1;
+}
+.texto{
+    padding-top: 100px;
+    text-align: center;
 }
 .art-2{
     flex-direction: row;
@@ -123,17 +144,21 @@ body{
 article blockquote{
     font-size: 18px;
     margin: 5px;
+/*
     background-image: url(../images/openquote3.gif);
     background-repeat: no-repeat;
     background-position: top left;
+*/
     text-indent: 68px;
     padding-top: 40px;
 }
 article span{
     display: block;
+/*
     background-image: url(../images/closequote3.gif);
     background-repeat: no-repeat;
     background-position: bottom right;
+*/
     padding-bottom: 40px;
     
 }
