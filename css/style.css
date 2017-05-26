@@ -119,9 +119,26 @@ body{
     height: 500px;
 }
 .imagen1{
-    background: url(../images/foto1.JPG) no-repeat center;
+    background: url(../images/portada/imagen1.jpg) no-repeat center;
     background-size: cover; 
 }
+.imagen2{
+    background: url(../images/portada/imagen2.JPG) no-repeat center;
+    background-size: cover; 
+}
+.imagen3{
+    background: url(../images/portada/imagen3.JPG) no-repeat center;
+    background-size: cover; 
+}
+.imagen4{
+    background: url(../images/portada/imagen4.JPG) no-repeat center;
+    background-size: cover; 
+}
+.imagen5{
+    background: url(../images/portada/imagen5.JPG) no-repeat center;
+    background-size: cover; 
+}
+
 .right{
     
     flex:1;
@@ -132,8 +149,12 @@ body{
     order: 1;
 }
 .texto{
-    padding-top: 100px;
-    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    margin: 0 40px;
 }
 .art-2{
     flex-direction: row;
@@ -141,27 +162,8 @@ body{
 .art-3{
     flex-direction: row-reverse;
 }
-article blockquote{
-    font-size: 18px;
-    margin: 5px;
-/*
-    background-image: url(../images/openquote3.gif);
-    background-repeat: no-repeat;
-    background-position: top left;
-*/
-    text-indent: 68px;
-    padding-top: 40px;
-}
-article span{
-    display: block;
-/*
-    background-image: url(../images/closequote3.gif);
-    background-repeat: no-repeat;
-    background-position: bottom right;
-*/
-    padding-bottom: 40px;
-    
-}
+
+
 
 /* Footer */
 
@@ -233,6 +235,91 @@ article span{
 }
 
 /* Precios */
+.precios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+.contTempAlta,.contTempBaja,.contOfertas{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.tipo1{
+    
+    box-shadow: 2px 2px 5px #999;
+    width: 340px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contOfertas .tipo1{
+    height: 220px;
+    padding-bottom: 20px;
+}
+.tipo2{
+    
+    box-shadow: 2px 2px 5px #999;
+    width: 440px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contOfertas .tipo2{
+    height: 270px;
+}
+.precioDia{
+    font-size: 38px;
+}
+.contOfertas .precioDia h2{
+    margin-bottom: 2px;
+}
+.precioDetalles{
+    background-color: #F8F9F0;
+    width: 100%;
+    height: 150px;
+    display: block;
+    text-align: center;
+}
+.precioButton{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+.TempAltaInfo{
+    margin-bottom: 50px;
+}
+.tempAlta{
+    text-align: center;
+}
+.TempAltaInfo span{
+    text-decoration: underline;
+}
+.contenedorPAX{
+    position: relative;
+    width: 100%;
+}
+.contenedorPAX h4{
+    position: absolute;
+    top: -55px;
+    left: 35%;
+    padding: 13px 16px;
+    background-color: #728EA0;
+    display: inline-block;
+    color:aliceblue;
+    border-radius: 5px;
+    font-size: 19px;
+}
+.tipo1 .contenedorPAX h4{
+    left: 30%;
+}
 
 .tabla{
     margin: 50px 20px;
