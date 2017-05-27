@@ -61,7 +61,7 @@ body{
     top: 0;
 }
 .backgroundPrecios{
-    height: 12vh;
+    height: 120px;
     background: #6086B4;
 }
 .portadaPrecios{
@@ -363,37 +363,28 @@ td{
     height: 80vh;
 }
 .fila{
-    height: 30%;
+    max-height: 250px;
+    height: 100%;
     background-color: aqua;
     display: flex;
+    justify-content: space-between;
 }
 .fila2{
     background-color: red;
 }
 .fila3{
     background: green;
+    margin-bottom: 60px;
 }
-.imgGaleria{
-    width: 20%;
+
+.item{
+    flex:1;
+    margin: 5px;
+    min-width: 320px;
+    max-width: 380px;
+    width: 100%;
+}
+.item img{
     height: 100%;
-}
-.item1{
-    flex:1;
-    background: url(../fotos/image1.JPG);
-    background-size: 100% 100%;
-}
-.item2{
-    flex:1;
-    background: url(../fotos/image2.JPG) 50% 50% no-repeat;
-    background-size: cover;
-}
-.item3{
-    flex:1;
-    background: url(../fotos/image3.JPG) 50% 50% no-repeat;
-    background-size: cover;
-}
-.item4{
-    flex:1;
-    background: url(../fotos/image4.JPG) 50% 50% no-repeat;
-    background-size: cover;
+    width: 100%;
 }
