@@ -1,12 +1,24 @@
 /*
 *{
-    border: 1px solid red;
+    colores para web:
+
+#69D2E7 azul oscuro
+#A7DBD8 azul claro
+#E0E4CC gris marron
+#F38630 naranja claro
+#FA6900 naranja oscuro
+
 }
 */
 body{
     margin: 0 auto;
     font-family: 'Lora', serif;
+    background: #E0E4CC;
     /* Portada */
+}
+h3{
+    font-family: 'Droid Serif', serif;
+    font-weight: 200;
 }
 .contenedor{
     max-width: 900px;
@@ -314,7 +326,8 @@ body{
     top: -55px;
     left: 35%;
     padding: 13px 16px;
-    background-color: #728EA0;
+/*    background-color: #728EA0;*/
+    background: #F38630;
     display: inline-block;
     color:aliceblue;
     border-radius: 5px;
