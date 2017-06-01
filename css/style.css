@@ -13,7 +13,7 @@
 body{
     margin: 0 auto;
     font-family: 'Lora', serif;
-    background: #E0E4CC;
+    
     /* Portada */
 }
 h3{
@@ -31,6 +31,12 @@ h3{
     background: rgba(39,59,71,.3);
     border-radius: 20px;
     margin: 0 auto;
+    
+    animation: 8s flash;
+}
+@keyframes flash{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 .header{
     max-width: 90vw;
@@ -64,7 +70,7 @@ h3{
 .background{
     height: 100vh;
     width: 100%;
-    background: url(../images/fondo2.jpg) no-repeat 50% 50%;
+    background: url(../images/fondo2.min.jpg) no-repeat 50% 50%;
     background-size: cover;
     opacity: .9;
 /*    z-index: 0;*/
@@ -83,12 +89,18 @@ h3{
     height: 100%;
     display: flex;
     align-items: center;
+    opacity: 1;
+    
 }
 .titulo{
     font-size: 60px;
     margin-bottom: 10px;
     color: white;
     padding-top: 10px;
+    
+}
+.button:hover{
+    opacity: 0;
 }
 .subtitulo{
     font-size: 24px;
@@ -409,3 +421,4 @@ td{
     height: 100%;
     width: 90%;
 }
+
