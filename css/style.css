@@ -402,6 +402,7 @@ td{
     justify-content: space-around;
     margin-top: 12px;
 }
+
 .fila2{
 /*    background-color: red;*/
 }
@@ -421,10 +422,37 @@ td{
     height: 100%;
     width: 90%;
 }
+/* Media Querie para galeria 1230px */
+@media screen and (max-width:1230px){
+    
+    .item img {
+        min-width:inherit;
+    width: 90%;
+    max-width: 250px;
+}
+    
+}
+/* Media Querie para pc pequeño */
+
+@media screen and (max-width:1170px){
+    .tipo1, .tipo2{
+        width: 90%;
+        height: 100%;
+        flex: 0 0 30%;
+        padding: 18px 0;
+        
+    }
+    .tipo1 .contenedorPAX h4 {
+        left: 22%;
+    }
+    .tipo2 .contenedorPAX h4{
+        left: 25%;
+    }
+}
 
 /* Media Querie para ipad 768 */
 
-@media screen and (max-width:770px){
+@media screen and (max-width:940px){
     .header{
         width: 100%;
         margin: 0;
