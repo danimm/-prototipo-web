@@ -448,8 +448,15 @@ td{
     .tipo2 .contenedorPAX h4{
         left: 25%;
     }
+    .referencia{
+        margin-bottom: 30px;
+    }
 }
-
+@media screen and (max-width:1230px){
+    .referencia{
+        margin-bottom: 50px;
+    }
+}
 /* Media Querie para ipad 768 */
 
 @media screen and (max-width:940px){
@@ -494,7 +501,24 @@ td{
     .contacto{
         padding: 0;
     }
-    
-    
-    
+}
+
+@media screen and (max-width:770px){
+    .referencia{
+        margin-bottom: 100px;
+    }
+    .contTempAlta{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tipo1, .tipo2{
+        margin-bottom: 50px;
+    }
+    .tipo1 .contenedorPAX h4, .tipo2 .contenedorPAX h4 {
+        left: 40%;
+    }
+    .NPAX{
+        background-color: RED;
+    }
 }
